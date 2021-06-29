@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: SlopeRight
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 21300000, guid: 4eb1e0c3a2590664a8582e870543559d, type: 3}
+  - {fileID: 21300000, guid: 04a0d94a891f09643a0e9214812b036a, type: 3}
+  - {fileID: 21300000, guid: 29a518c79f3d092488549600d7788a44, type: 3}
+  - {fileID: 21300000, guid: 62c3d3eb49bd9684d95da7eff8a4b12f, type: 3}
+  - {fileID: 21300000, guid: 15b7b603b57c3c146b487b78de9e46fc, type: 3}
+  - {fileID: 21300000, guid: 9ada7a91138e01349b9bc88430bcc908, type: 3}
+  m_MinSpeed: 10
+  m_MaxSpeed: 10
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 1

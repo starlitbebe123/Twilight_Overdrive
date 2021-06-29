@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ground
+  - Enemy
+  - HurtBox
+  - HitBox
+  - DamageBox
+  - Zone
+  - Border
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Player
+  - Water
+  - UI
+  - Background
+  - Enemy
+  - Ground
+  - OnlyHitPlayer
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 613400107
+    locked: 0
+  - name: Ground
+    uniqueID: 830521855
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Enemy
+    uniqueID: 3688938131
+    locked: 0
+  - name: Player
+    uniqueID: 4150025995
+    locked: 0
+  - name: Bullet
+    uniqueID: 1248622773
+    locked: 0
