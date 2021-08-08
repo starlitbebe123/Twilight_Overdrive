@@ -33,5 +33,10 @@ public class FadeFunction : MonoBehaviour
             SceneManager.LoadScene(3);
         }
 
+        else if (SceneNumber == 4)
+        {
+            SceneManager.LoadScene(4);
+        }
+
     }
 }

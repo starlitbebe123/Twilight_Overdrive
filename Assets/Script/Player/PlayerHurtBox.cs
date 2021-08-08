@@ -17,6 +17,12 @@ public class PlayerHurtBox : MonoBehaviour
     public AudioClip GoalMusic;
     AudioSource audioSource;
     public GameObject WinText;
+    Image WarningLight;
+    public AudioSource BGMSource;
+    GameObject GoalCollider;
+    GameObject Crystal;
+
+ 
 
     void Start()
     {
@@ -25,8 +31,11 @@ public class PlayerHurtBox : MonoBehaviour
         rgbd = Player.GetComponent<Rigidbody2D>();
         imgHp = GameObject.Find("HpFill").GetComponent<Image>();
         audioSource = GetComponent<AudioSource>();
-
-
+        WarningLight = GameObject.Find("WarningLight").GetComponent<Image>();
+        WinText = GameObject.Find("WinText");
+        WinText.SetActive(false);
+        GoalCollider = GameObject.Find("GoalCollider"); 
+        Crystal = GameObject.Find("Crystal");
     }
 
     private void Update()
@@ -34,9 +43,16 @@ public class PlayerHurtBox : MonoBehaviour
         playerHp = Player.GetComponent<PlayerStat>().playerHp; 
         MaxHp = Player.GetComponent<PlayerStat>().playerMaxHp;
         imgHp.fillAmount = playerHp / MaxHp;
-        if (playerHp <= 10) imgHp.color = new Color(255, 0, 0);
-        else if (playerHp > 10) imgHp.color = new Color(0, 255, 0);
-
+        if (playerHp <= 10)
+        {
+            WarningLight.enabled = true;
+            imgHp.color = new Color(255, 0, 0); 
+        }
+        else
+        {
+            WarningLight.enabled = false;
+            imgHp.color = new Color(0,255, 0);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -56,6 +72,15 @@ public class PlayerHurtBox : MonoBehaviour
                 Player.GetComponent<PlayerStat>().playerHp -= 10; 
                 StartCoroutine(Recover());
                 
+            }
+            if (other.tag == "Goal") 
+            {
+                WinText.SetActive(true);
+                BGMSource.Stop();
+                Destroy(Crystal);
+                Destroy(other);
+                BGMSource.PlayOneShot(GoalSound, 0.5F);
+                BGMSource.PlayOneShot(GoalMusic, 1F);
             }
         }
 

@@ -19,6 +19,7 @@ public class ButtonFunction : MonoBehaviour
     {
         FadeAnim.SetBool("FadeOut", true);
         FadeBlack.GetComponent<FadeFunction>().SceneNumber = 0;
+        Time.timeScale = 1f;
     }
     public void Tutorial()
     {
@@ -29,10 +30,17 @@ public class ButtonFunction : MonoBehaviour
     {
         FadeAnim.SetBool("FadeOut", true);
         FadeBlack.GetComponent<FadeFunction>().SceneNumber  = 2;
+        Time.timeScale = 1f;
     }
 
-    
-    
+    public void Credit()
+    {
+        FadeAnim.SetBool("FadeOut", true);
+        FadeBlack.GetComponent<FadeFunction>().SceneNumber = 4;
+    }
+
+
+
 
     public void QuitGame()
     {

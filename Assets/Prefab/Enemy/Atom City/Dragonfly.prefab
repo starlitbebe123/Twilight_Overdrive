@@ -166,3 +166,4 @@ MonoBehaviour:
   EnemyHp: 1
   Explosion: {fileID: 6232863094038559976, guid: 7aeda663e8d64ad4482b11ab650500c8, type: 3}
   exploPos: {x: -1, y: 0, z: 0}
+  HitAud: {fileID: 8300000, guid: 76383e2582a872d4b9494162c7d027ef, type: 3}

@@ -16,18 +16,6 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : Unity.Jobs.JobHandle
 
-	//Start Registrations for type : UnityEngine.Animation
-
-		//System.Int32 UnityEngine.Animation::GetStateCount()
-		void Register_UnityEngine_Animation_GetStateCount();
-		Register_UnityEngine_Animation_GetStateCount();
-
-		//UnityEngine.AnimationState UnityEngine.Animation::GetStateAtIndex(System.Int32)
-		void Register_UnityEngine_Animation_GetStateAtIndex();
-		Register_UnityEngine_Animation_GetStateAtIndex();
-
-	//End Registrations for type : UnityEngine.Animation
-
 	//Start Registrations for type : UnityEngine.AnimationCurve
 
 		//System.Boolean UnityEngine.AnimationCurve::Internal_Equals(System.IntPtr)
@@ -105,6 +93,10 @@ void RegisterAllStrippedInternalCalls()
 	//End Registrations for type : UnityEngine.AsyncOperation
 
 	//Start Registrations for type : UnityEngine.AudioSource
+
+		//System.Void UnityEngine.AudioSource::Pause()
+		void Register_UnityEngine_AudioSource_Pause();
+		Register_UnityEngine_AudioSource_Pause();
 
 		//System.Void UnityEngine.AudioSource::Play(System.Double)
 		void Register_UnityEngine_AudioSource_Play();
@@ -1977,6 +1969,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Single UnityEngine.Time::get_unscaledTime()
 		void Register_UnityEngine_Time_get_unscaledTime();
 		Register_UnityEngine_Time_get_unscaledTime();
+
+		//System.Void UnityEngine.Time::set_timeScale(System.Single)
+		void Register_UnityEngine_Time_set_timeScale();
+		Register_UnityEngine_Time_set_timeScale();
 
 	//End Registrations for type : UnityEngine.Time
 

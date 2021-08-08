@@ -77,6 +77,7 @@
     <Compile Include="Assets\Script\Enemy\Dragonfly.cs" />
     <Compile Include="Assets\Script\Enemy\Infantry2.cs" />
     <Compile Include="Assets\Script\Player\PlayerStat.cs" />
+    <Compile Include="Assets\Script\Stage\PauseTheGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

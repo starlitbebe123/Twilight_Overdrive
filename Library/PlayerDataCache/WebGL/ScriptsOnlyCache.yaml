@@ -11,6 +11,7 @@ ScriptsOnlyBuild:
     - Goal
     - Gunner
     - Infantry
+    - PauseTheGame
     - PlayerControl
     - PlayerHurtBox
     - PlayerStat
@@ -20,7 +21,6 @@ ScriptsOnlyBuild:
     - ZoneEnemyCameraControl
     - ZoneEnemyTrigger
     Unity.2D.Tilemap.Editor.dll:
-    - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
@@ -28,26 +28,10 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
-    Unity.2D.Tilemap.Extras.Editor.dll:
-    - UnityEditor.Tilemaps.CoordinateBrush
-    - UnityEditor.Tilemaps.GameObjectBrush
-    - UnityEditor.Tilemaps.GroupBrush
-    - UnityEditor.Tilemaps.LineBrush
-    - UnityEditor.Tilemaps.RandomBrush
-    - UnityEditor.Tilemaps.TintBrush
-    - UnityEditor.Tilemaps.TintBrushSmooth
     Unity.2D.Tilemap.Extras.dll:
     - UnityEngine.Tilemaps.AnimatedTile
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -101,28 +85,26 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
-    - Class: 111
-      Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 592}
     - Class: 114
       Script: {instanceID: 1424}
     - Class: 114
-      Script: {instanceID: 1716}
+      Script: {instanceID: 1426}
     - Class: 114
-      Script: {instanceID: 1768}
+      Script: {instanceID: 1718}
     - Class: 114
-      Script: {instanceID: 1772}
+      Script: {instanceID: 1770}
     - Class: 114
-      Script: {instanceID: 1844}
+      Script: {instanceID: 1774}
     - Class: 114
-      Script: {instanceID: 1894}
+      Script: {instanceID: 1846}
     - Class: 114
-      Script: {instanceID: 1904}
+      Script: {instanceID: 1896}
     - Class: 114
-      Script: {instanceID: 2224}
+      Script: {instanceID: 1906}
     - Class: 114
-      Script: {instanceID: 2308}
+      Script: {instanceID: 2226}
     - Class: 114
       Script: {instanceID: 2392}
     - Class: 114
@@ -156,7 +138,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3634}
     - Class: 114
+      Script: {instanceID: 3728}
+    - Class: 114
       Script: {instanceID: 3880}
+    - Class: 114
+      Script: {instanceID: 32462}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -191,6 +177,67 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 1839735485
       Script: {instanceID: 0}
+    Assets/Scene/Credit.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1424}
+    - Class: 114
+      Script: {instanceID: 1426}
+    - Class: 114
+      Script: {instanceID: 1718}
+    - Class: 114
+      Script: {instanceID: 2766}
+    - Class: 114
+      Script: {instanceID: 2776}
+    - Class: 114
+      Script: {instanceID: 2962}
+    - Class: 114
+      Script: {instanceID: 3220}
+    - Class: 114
+      Script: {instanceID: 3580}
+    - Class: 114
+      Script: {instanceID: 3728}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
+      Script: {instanceID: 0}
     Assets/Scene/GameOver.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -221,9 +268,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1424}
     - Class: 114
-      Script: {instanceID: 1716}
+      Script: {instanceID: 1426}
     - Class: 114
-      Script: {instanceID: 2308}
+      Script: {instanceID: 1718}
     - Class: 114
       Script: {instanceID: 2766}
     - Class: 114
@@ -243,8 +290,6 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -284,9 +329,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1424}
     - Class: 114
-      Script: {instanceID: 1716}
+      Script: {instanceID: 1426}
     - Class: 114
-      Script: {instanceID: 2308}
+      Script: {instanceID: 1718}
     - Class: 114
       Script: {instanceID: 2766}
     - Class: 114
@@ -347,9 +392,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1424}
     - Class: 114
-      Script: {instanceID: 1716}
+      Script: {instanceID: 1426}
     - Class: 114
-      Script: {instanceID: 2308}
+      Script: {instanceID: 1718}
     - Class: 114
       Script: {instanceID: 2766}
     - Class: 114
@@ -381,6 +426,12 @@ ScriptsOnlyBuild:
     - Class: 225
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 699619b86d9359741a4f58540298c80b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
   - hash:
       serializedVersion: 2
       Hash: a6e561615949734e9f12f9b61661f43e
@@ -503,7 +554,7 @@ ScriptsOnlyBuild:
     className: PlayerQuitHandler
   - hash:
       serializedVersion: 2
-      Hash: 13f912bb9706be4f931f0553d4a96d92
+      Hash: 9a1f26db846332e0011af9486d705590
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Goal
@@ -645,12 +696,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
-  - hash:
-      serializedVersion: 2
-      Hash: 699619b86d9359741a4f58540298c80b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -815,7 +860,7 @@ ScriptsOnlyBuild:
     className: Infantry
   - hash:
       serializedVersion: 2
-      Hash: a2dc0835f54908b36741193ab0ab0dc4
+      Hash: 68784c9d017c66514b8b6c895345eb0e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerHurtBox
@@ -1001,14 +1046,21 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: bb6ce35f00990db3d28ed21905352415
+      Hash: 65da001e3278edf1fa9a9e9dc2801f32
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerStat
+  - hash:
+      serializedVersion: 2
+      Hash: 7e8050db0b8e0d7cbae35465f72cae07
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PauseTheGame
   platform: 20
   scenePathNames:
   - Assets/Scene/Title.unity
   - Assets/Scene/Tutorial.unity
   - Assets/Scene/AtomCityAct1.unity
   - Assets/Scene/GameOver.unity
+  - Assets/Scene/Credit.unity
   playerPath: D:/Unity Project/Twilight_Overdrive/Web

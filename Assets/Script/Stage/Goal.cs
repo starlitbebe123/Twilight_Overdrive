@@ -4,22 +4,16 @@ using UnityEngine;
 
 public class Goal : MonoBehaviour
 {
-    public AudioSource BGMSource;
-    public AudioSource GoalSource;
-
-    public AudioClip ItemSound;
-    public AudioClip GoalMusic;
+    
     GameObject Capsule;
-    GameObject Crystal;
-    GameObject WinText;
+    GameObject GoalCollider;
+    
     public GameObject Explosion;
 
     private void Start()
     {
         Capsule = GameObject.Find("Capsule");
-        Crystal = GameObject.Find("Crystal");
-        WinText = GameObject.Find("WinText");
-        WinText.SetActive(false);
+        GoalCollider = GameObject.Find("GoalCollider");
     }
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -27,18 +21,11 @@ public class Goal : MonoBehaviour
         {
             Capsule.SetActive(false);
             GameObject temp = Instantiate(Explosion, transform.position, Quaternion.identity);
+            GoalCollider.SetActive(true);
             Destroy(temp, 2f);
+            Destroy(gameObject); 
         }
 
-        if(other.tag == "Player") 
-        {
-            
-            Crystal.SetActive(false);
-            WinText.SetActive(true);
-            BGMSource.Stop();
-            GetComponent<BoxCollider2D>().enabled = false;
-            GoalSource.PlayOneShot(ItemSound, 0.5F);
-            GoalSource.PlayOneShot(GoalMusic, 1F);
-        }
+       
     }
 }

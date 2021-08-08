@@ -11,6 +11,7 @@ TagManager:
   - DamageBox
   - Zone
   - Border
+  - Goal
   layers:
   - Default
   - TransparentFX

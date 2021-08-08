@@ -22,6 +22,7 @@ public class EnemyStat : MonoBehaviour
         Player = GameObject.FindGameObjectWithTag("Player");
         rend = gameObject.GetComponent<SpriteRenderer>();
         originalColor = rend.color;
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame

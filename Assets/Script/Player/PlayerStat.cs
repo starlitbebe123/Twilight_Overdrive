@@ -8,7 +8,7 @@ public class PlayerStat : MonoBehaviour
 {
     public GameObject Player;
     public float playerMaxHp;
-    public float playerHp;
+    public int playerHp;
     Animator anim;
     Text textHp;
     GameObject FadeBlack;
